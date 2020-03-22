@@ -1,8 +1,11 @@
 DTO classes for https://github.com/tonsV2/injury-log-api
 
-Commit and bump version in `build.gradle`
+# Release
+* Export .env
+* Bump version in `build.gradle`
+* Commit
 ```bash
 ./gradlew bintrayUpload
 ```
 
-Release new version on https://bintray.com/tons/tons/injurylog-dto
+Find latest version at https://bintray.com/tons/tons/injurylog-dto
