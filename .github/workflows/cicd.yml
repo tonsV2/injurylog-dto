@@ -21,16 +21,9 @@ jobs:
           name: test-report
           path: build/reports/tests/test/
 
-      - name: Upload to Bintray
-        if: github.ref == 'refs/heads/release'
-        env:
-          BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
-          BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
-        run: ./gradlew bintrayUpload
-
       - name: Publish to Bintray
         if: github.ref == 'refs/heads/release'
         env:
           BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
           BINTRAY_KEY: ${{ secrets.BINTRAY_KEY }}
-        run: ./gradlew bintrayPublish
+        run: ./gradlew bintrayUpload
