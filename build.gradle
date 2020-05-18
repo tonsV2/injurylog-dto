@@ -25,7 +25,6 @@ publishing {
             from components.java
             groupId 'dk.fitfit.injurylog'
             artifactId 'injurylog-dto'
-            version '0.3.0'
         }
     }
 }
