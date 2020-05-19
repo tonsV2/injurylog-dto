@@ -16,6 +16,7 @@ bintray {
         userOrg = 'tons'
         licenses = ['Apache-2.0']
         vcsUrl = 'https://github.com/tonsV2/injurylog-dto.git'
+        version '0.3.0'
     }
 }
 
